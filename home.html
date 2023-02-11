@@ -177,10 +177,10 @@
         }
     }
 
-    @media(max-width: 1000px) {
+    @media (max-width: 800px) {
         .box {
-            width: 70px;
-            height: 40px;
+            width: 70vw;
+            height: 65vh;
         }
 
         .wave {
@@ -192,26 +192,17 @@
         }
 
         .info {
-            font-size: 30px;
+            font-size: 40px;
         }
     }
 
-    @media(max-width:500px) {
+    @media (max-height: 500px) {
         .box {
-            width: 90vw;
-            height: 60vh;
+            height: 80vh;
         }
 
         .wave {
             top: 150%;
-        }
-
-        #weathercon {
-            font-size: 50px;
-        }
-
-        .info {
-            font-size: 30px;
         }
     }
 
@@ -240,6 +231,7 @@
         <h1 class="temp">{%tempval%}&degC</h1>
         <h3 class="tempmin_max">Min {%tempmin%}&degC | Max {%tempmax%}&degC</h3>
     </div>
+    
 
     <script>
         const curDate = document.getElementById('date');
