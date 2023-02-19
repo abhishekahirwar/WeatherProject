@@ -177,32 +177,41 @@
         }
     }
 
-    @media (max-width: 800px) {
+    @media(max-width: 1000px) {
         .box {
-            width: 70vw;
-            height: 65vh;
+            width: 90vw;
+            height: 60vh;
         }
 
-        .wave {
-            top: 90%;
+        .wave-one {
+            top: 100%;
         }
 
-        #weathercon {
-            font-size: 50px;
+        html,
+        body {
+            font-size: 100%;
         }
 
-        .info {
-            font-size: 40px;
-        }
-    }
-
-    @media (max-height: 500px) {
-        .box {
-            height: 80vh;
+        #weathercon .fas {
+            font-size: 12rem;
+            animation: fas-anime 3s linear infinite alternate;
         }
 
-        .wave {
-            top: 150%;
+        .location {
+            font-size: 7rem;
+            bottom: 10%;
+        }
+
+        #date {
+            font-size: 2.5rem;
+        }
+
+        .temp {
+            font-size: 5rem;
+        }
+
+        .tempmin_max {
+            font-size: 2rem;
         }
     }
 
@@ -231,7 +240,7 @@
         <h1 class="temp">{%tempval%}&degC</h1>
         <h3 class="tempmin_max">Min {%tempmin%}&degC | Max {%tempmax%}&degC</h3>
     </div>
-    
+
 
     <script>
         const curDate = document.getElementById('date');
