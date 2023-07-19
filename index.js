@@ -2,6 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const requests = require('requests');
 const hostname = '127.0.0.1';     
+require("dotenv").config();
 const port = process.env.PORT || 8000;
 
 const homeFile = fs.readFileSync('home.html', 'utf-8');
