@@ -2,13 +2,14 @@
 <html lang="en">
 
 <head>
+    <title>Weather App</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
         integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <style>
@@ -212,7 +213,6 @@
 
         .tempmin_max {
             font-size: 2rem;
-            
         }
     }
 
@@ -250,11 +250,11 @@
         const tempStatus = '{%tempstatus%}';
 
         // condition to check sunny or cloudy
-        if (tempStatus == 'Sunny') {
+        if (tempStatus === 'Sunny') {
             weathercon.innerHTML = "<i class='fas fa-sun' style='color: #eccc68;'></i>";
-        } else if (tempStatus == 'Clouds') {
+        } else if (tempStatus === 'Clouds') {
             weathercon.innerHTML = "<i class='fas fa-cloud' style='color: #dfe4ea;'></i>";
-        } else if (tempStatus == 'Rainy') {
+        } else if (tempStatus === 'Rainy') {
             weathercon.innerHTML = "<i class='fas fa-cloud-rain' style='color: #a4b0be;'></i>";
         } else {
             weathercon.innerHTML = "<i class='fas fa-sun' style='color: #44c3de;'></i>";
